@@ -1,0 +1,42 @@
+.why {
+  text-align: center;
+  background: var(--gray);
+  padding: 5em 0;
+}
+
+.why .copy {
+  margin-bottom: 5em;
+}
+
+.why__item .copy {
+  margin-bottom: 2em;
+  font-size: 1em;
+}
+
+.why__item img {
+  margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .why {
+    text-align: left;
+  }
+  .why .grid__why {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .why {
+    text-align: left;
+  }
+  .why .grid__why {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*# sourceMappingURL=why.css.map */

@@ -1,0 +1,50 @@
+                                        .hero {
+                                            text-align: center;
+                                            padding-bottom: 5em;
+                                            background: var(--lightGray);
+                                        }
+                                        
+                                        .copy {
+                                            margin-bottom: 2.5em;
+                                        }
+                                        
+                                        &__image {
+                                            // border: 1px solid red;
+                                            height: 300px;
+                                            margin: 0 calc(-1 * var(--wrapperSpace));
+                                            background: url('../images/image-mockups.png') center bottom no-repeat, url('../images/bg-intro-mobile.svg') center no-repeat;
+                                            background-size: 345px, cover;
+                                            margin-bottom: 1.2em;
+                                        }
+                                        
+                                        &__imageSrc {
+                                            display: none;
+                                        }
+                                        
+                                        @media screen and (min-width: 768px) {
+                                            .hero__image {
+                                                -ms-grid-row: 1;
+                                                -ms-grid-column: 2;
+                                                grid-area: image;
+                                                min-height: inherit;
+                                                position: absolute;
+                                                width: 500px;
+                                                // right: 0;
+                                                left: 600px;
+                                                top: -40px;
+                                                background: url(../../images/image-mockups.png) center bottom no-repeat;
+                                                background-size: cover;
+                                            }
+                                        }
+                                        
+                                        @media screen and (min-width: 1024px) {
+                                            &__imageSrc {
+                                                visibility: visible;
+                                            }
+                                            .hero__image {
+                                                position: absolute;
+                                                top: 0;
+                                                left: 500px;
+                                                width: 600px;
+                                            }
+                                        }

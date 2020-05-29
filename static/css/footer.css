@@ -1,0 +1,17 @@
+/* Error: Parentheses aren't allowed in plain CSS.
+ *    ,
+ * 24 |   -ms-grid-columns: (25px)[5];
+ *    |                     ^
+ *    '
+ *   src\sass\footer.css 24:21  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Parentheses aren't allowed in plain CSS.\a    \2577 \a 24 \2502    -ms-grid-columns: (25px)[5];\a    \2502                      ^\a    \2575 \a   src\\sass\\footer.css 24:21  root stylesheet";
+}

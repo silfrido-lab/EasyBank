@@ -1,0 +1,17 @@
+/* Error: Parentheses aren't allowed in plain CSS.
+ *    ,
+ * 27 |     -ms-grid-columns: (1fr)[2];
+ *    |                       ^
+ *    '
+ *   src\sass\why.css 27:23  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Parentheses aren't allowed in plain CSS.\a    \2577 \a 27 \2502      -ms-grid-columns: (1fr)[2];\a    \2502                        ^\a    \2575 \a   src\\sass\\why.css 27:23  root stylesheet";
+}

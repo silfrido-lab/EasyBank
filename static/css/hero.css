@@ -1,0 +1,68 @@
+.hero {
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+.hero .copy {
+    margin-bottom: 2.5em;
+}
+
+.hero__image {
+    height: 300px;
+    margin: 0 -1.5em;
+    background: url(../../images/image-mockups.png) center bottom no-repeat, url(../../images/bg-intro-mobile.svg) center no-repeat;
+    background-size: 345px, cover;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        text-align: left;
+        background: url(../../images/bg-intro-desktop.svg) right -500px top -240px no-repeat;
+        background-size: cover;
+        min-height: 650px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .hero__content {
+        border: 1px solid red;
+        display: -ms-grid;
+        display: grid;
+        grid-template-areas: "description image";
+        -ms-grid-columns: 460px 1fr;
+        grid-template-columns: 460px 1fr;
+        min-height: 650px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .hero__description {
+        border: 1px solid blue;
+    }
+    .hero__image {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        grid-area: image;
+        min-height: inherit;
+        position: absolute;
+        width: 758px;
+        right: 0;
+        background: url(../../images/image-mockups.png) center bottom no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero__image {
+        background: none;
+        left: 150px;
+        right: 0;
+        top: 0;
+    }
+}
+
+
+/*# sourceMappingURL=hero.css.map */
+
+
+/*# sourceMappingURL=hero.css.map */
